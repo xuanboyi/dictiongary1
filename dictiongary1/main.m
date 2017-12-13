@@ -10,8 +10,10 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        NSDictionary *dic1 = [[NSDictionary alloc]initWithObjectsAndKeys:@"one",@"1",@"two",@"2",@"three",@"3", nil];
+        NSArray *array1 = [dic1 allKeys];
+        NSLog(@"字典中所有的key有:%@",array1);
+        
     }
     return 0;
 }
